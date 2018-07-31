@@ -4,183 +4,186 @@
 	ViewData["NumCards"] = "9";
 }
 
-
-<div class="header">
-	<h1>Alignment Based Harrow Deck</h1>
+<div class="row">
+	<div class="col-lg-3">
+		<div class="container">@Html.Partial("_StackedDeck", Model)</div>
+	</div>
+	<div class="col-lg-9">
+		<div class="header">
+			<h1>Alignment Based Harrow Deck</h1>
+		</div>
+		<div class="container ">
+			<div class="row">
+				<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+					<div class="margin @Model.TraditionalSpread["Lawful Good"].CardColor">
+						<a id="Lawful Good" class="div-link" asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Lawful Good"].Name">
+							<h3>@Model.TraditionalSpread["Lawful Good"].Name</h3>
+							<hr style="margin-top: 5px; margin-bottom: 10px"/>
+							<h5 class="alignment">@Model.TraditionalSpread["Lawful Good"].Alignment</h5>
+							<div class="description">
+								@Model.TraditionalSpread["Lawful Good"].Description
+							</div>
+							<div class="normal-description" hidden>
+								@Model.TraditionalSpread["Lawful Good"].Description
+							</div>
+							<div class="inverted-description" hidden>
+								@Model.TraditionalSpread["Lawful Good"].Description
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+					<div class="margin @Model.TraditionalSpread["Neutral Good"].CardColor">
+						<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Neutral Good"].Name">
+							<h3>@Model.TraditionalSpread["Neutral Good"].Name</h3>
+							<hr style="margin-top: 5px; margin-bottom: 10px"/>
+							<h5 class="alignment">@Model.TraditionalSpread["Neutral Good"].Alignment</h5>
+							<div class="description">
+								@Model.TraditionalSpread["Neutral Good"].Description
+							</div>
+							<div class="normal-description" hidden>
+								@Model.TraditionalSpread["Neutral Good"].Description
+							</div>
+							<div class="inverted-description" hidden>
+								@Model.TraditionalSpread["Neutral Good"].Description
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+					<div class="margin @Model.TraditionalSpread["Chaotic Good"].CardColor">
+						<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Chaotic Good"].Name">
+							<h3>@Model.TraditionalSpread["Chaotic Good"].Name</h3>
+							<hr style="margin-top: 5px; margin-bottom: 10px"/>
+							<h5 class="alignment">@Model.TraditionalSpread["Chaotic Good"].Alignment</h5>
+							<div class="description">
+								@Model.TraditionalSpread["Chaotic Good"].Description
+							</div>
+							<div class="normal-description" hidden>
+								@Model.TraditionalSpread["Chaotic Good"].Description
+							</div>
+							<div class="inverted-description" hidden>
+								@Model.TraditionalSpread["Chaotic Good"].Description
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+					<div class="margin @Model.TraditionalSpread["Lawful Neutral"].CardColor">
+						<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Lawful Neutral"].Name">
+							<h3>@Model.TraditionalSpread["Lawful Neutral"].Name</h3>
+							<hr style="margin-top: 5px; margin-bottom: 10px"/>
+							<h5 class="alignment">@Model.TraditionalSpread["Lawful Neutral"].Alignment</h5>
+							<div class="description">
+								@Model.TraditionalSpread["Lawful Neutral"].Description
+							</div>
+							<div class="normal-description" hidden>
+								@Model.TraditionalSpread["Lawful Neutral"].Description
+							</div>
+							<div class="normal-description" hidden>
+								@Model.TraditionalSpread["Lawful Neutral"].Description
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+					<div class="margin @Model.TraditionalSpread["True Neutral"].CardColor">
+						<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["True Neutral"].Name">
+							<h3>@Model.TraditionalSpread["True Neutral"].Name</h3>
+							<hr style="margin-top: 5px; margin-bottom: 10px"/>
+							<h5 class="alignment">@Model.TraditionalSpread["True Neutral"].Alignment</h5>
+							<div class="description">
+								@Model.TraditionalSpread["True Neutral"].Description
+							</div>
+							<div class="normal-description" hidden>
+								@Model.TraditionalSpread["True Neutral"].Description
+							</div>
+							<div class="normal-description" hidden>
+								@Model.TraditionalSpread["True Neutral"].Description
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+					<div class="margin @Model.TraditionalSpread["Chaotic Neutral"].CardColor">
+						<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Chaotic Neutral"].Name">
+							<h3>@Model.TraditionalSpread["Chaotic Neutral"].Name</h3>
+							<hr style="margin-top: 5px; margin-bottom: 10px"/>
+							<h5 class="alignment">@Model.TraditionalSpread["Chaotic Neutral"].Alignment</h5>
+							<div class="description">
+								@Model.TraditionalSpread["Chaotic Neutral"].Description
+							</div>
+							<div class="normal-description" hidden>
+								@Model.TraditionalSpread["Chaotic Neutral"].Description
+							</div>
+							<div class="normal-description" hidden>
+								@Model.TraditionalSpread["Chaotic Neutral"].Description
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+					<div class="margin @Model.TraditionalSpread["Lawful Evil"].CardColor">
+						<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Lawful Evil"].Name">
+							<h3>@Model.TraditionalSpread["Lawful Evil"].Name</h3>
+							<hr style="margin-top: 5px; margin-bottom: 10px"/>
+							<h5 class="alignment">@Model.TraditionalSpread["Lawful Evil"].Alignment</h5>
+							<div class="description">
+								@Model.TraditionalSpread["Lawful Evil"].Description
+							</div>
+							<div class="normal-description" hidden>
+								@Model.TraditionalSpread["Lawful Evil"].Description
+							</div>
+							<div class="normal-description" hidden>
+								@Model.TraditionalSpread["Lawful Evil"].Description
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+					<div class="margin @Model.TraditionalSpread["Neutral Evil"].CardColor">
+						<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Neutral Evil"].Name">
+							<h3>@Model.TraditionalSpread["Neutral Evil"].Name</h3>
+							<hr style="margin-top: 5px; margin-bottom: 10px"/>
+							<h5 class="alignment">@Model.TraditionalSpread["Neutral Evil"].Alignment</h5>
+							<div class="description">
+								@Model.TraditionalSpread["Neutral Evil"].Description
+							</div>
+							<div class="normal-description" hidden>
+								@Model.TraditionalSpread["Neutral Evil"].Description
+							</div>
+							<div class="normal-description" hidden>
+								@Model.TraditionalSpread["Neutral Evil"].Description
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+					<div class="margin @Model.TraditionalSpread["Chaotic Evil"].CardColor">
+						<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Chaotic Evil"].Name">
+							<h3>@Model.TraditionalSpread["Chaotic Evil"].Name</h3>
+							<hr style="margin-top: 5px; margin-bottom: 10px"/>
+							<h5 class="alignment">@Model.TraditionalSpread["Chaotic Evil"].Alignment</h5>
+							<div class="description">
+								@Model.TraditionalSpread["Chaotic Evil"].Description
+							</div>
+							<div class="normal-description" hidden>
+								@Model.TraditionalSpread["Chaotic Evil"].Description
+							</div>
+							<div class="normal-description" hidden>
+								@Model.TraditionalSpread["Chaotic Evil"].Description
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-
-<div class="box alt sector">
-	<div class="row">
-		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
-			<div class="margin @Model.TraditionalSpread["Lawful Good"].CardColor">
-				<a id="Lawful Good" class="div-link" asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Lawful Good"].Name">
-					<h3>@Model.TraditionalSpread["Lawful Good"].Name</h3>
-					<hr style="margin-top: 5px; margin-bottom: 10px" />
-					<h5 class="alignment">@Model.TraditionalSpread["Lawful Good"].Alignment</h5>
-					<div class="description">
-						@Model.TraditionalSpread["Lawful Good"].Description
-					</div>
-					<div class="normal-description" hidden>
-						@Model.TraditionalSpread["Lawful Good"].Description
-					</div>
-					<div class="inverted-description" hidden>
-						@Model.TraditionalSpread["Lawful Good"].Description
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
-			<div class="margin @Model.TraditionalSpread["Neutral Good"].CardColor">
-				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Neutral Good"].Name">
-					<h3>@Model.TraditionalSpread["Neutral Good"].Name</h3>
-					<hr style="margin-top: 5px; margin-bottom: 10px" />
-					<h5 class="alignment">@Model.TraditionalSpread["Neutral Good"].Alignment</h5>
-					<div class="description">
-						@Model.TraditionalSpread["Neutral Good"].Description
-					</div>
-					<div class="normal-description" hidden>
-						@Model.TraditionalSpread["Neutral Good"].Description
-					</div>
-					<div class="inverted-description" hidden>
-						@Model.TraditionalSpread["Neutral Good"].Description
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
-			<div class="margin @Model.TraditionalSpread["Chaotic Good"].CardColor">
-				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Chaotic Good"].Name">
-					<h3>@Model.TraditionalSpread["Chaotic Good"].Name</h3>
-					<hr style="margin-top: 5px; margin-bottom: 10px" />
-					<h5 class="alignment">@Model.TraditionalSpread["Chaotic Good"].Alignment</h5>
-					<div class="description">
-						@Model.TraditionalSpread["Chaotic Good"].Description
-					</div>
-					<div class="normal-description" hidden>
-						@Model.TraditionalSpread["Chaotic Good"].Description
-					</div>
-					<div class="inverted-description" hidden>
-						@Model.TraditionalSpread["Chaotic Good"].Description
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
-			<div class="margin @Model.TraditionalSpread["Lawful Neutral"].CardColor">
-				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Lawful Neutral"].Name">
-					<h3>@Model.TraditionalSpread["Lawful Neutral"].Name</h3>
-					<hr style="margin-top: 5px; margin-bottom: 10px" />
-					<h5 class="alignment">@Model.TraditionalSpread["Lawful Neutral"].Alignment</h5>
-					<div class="description">
-						@Model.TraditionalSpread["Lawful Neutral"].Description
-					</div>
-					<div class="normal-description" hidden>
-						@Model.TraditionalSpread["Lawful Neutral"].Description
-					</div>
-					<div class="normal-description" hidden>
-						@Model.TraditionalSpread["Lawful Neutral"].Description
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
-			<div class="margin @Model.TraditionalSpread["True Neutral"].CardColor">
-				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["True Neutral"].Name">
-					<h3>@Model.TraditionalSpread["True Neutral"].Name</h3>
-					<hr style="margin-top: 5px; margin-bottom: 10px" />
-					<h5 class="alignment">@Model.TraditionalSpread["True Neutral"].Alignment</h5>
-					<div class="description">
-						@Model.TraditionalSpread["True Neutral"].Description
-					</div>
-					<div class="normal-description" hidden>
-						@Model.TraditionalSpread["True Neutral"].Description
-					</div>
-					<div class="normal-description" hidden>
-						@Model.TraditionalSpread["True Neutral"].Description
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
-			<div class="margin @Model.TraditionalSpread["Chaotic Neutral"].CardColor">
-				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Chaotic Neutral"].Name">
-					<h3>@Model.TraditionalSpread["Chaotic Neutral"].Name</h3>
-					<hr style="margin-top: 5px; margin-bottom: 10px" />
-					<h5 class="alignment">@Model.TraditionalSpread["Chaotic Neutral"].Alignment</h5>
-					<div class="description">
-						@Model.TraditionalSpread["Chaotic Neutral"].Description
-					</div>
-					<div class="normal-description" hidden>
-						@Model.TraditionalSpread["Chaotic Neutral"].Description
-					</div>
-					<div class="normal-description" hidden>
-						@Model.TraditionalSpread["Chaotic Neutral"].Description
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
-			<div class="margin @Model.TraditionalSpread["Lawful Evil"].CardColor">
-				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Lawful Evil"].Name">
-					<h3>@Model.TraditionalSpread["Lawful Evil"].Name</h3>
-					<hr style="margin-top: 5px; margin-bottom: 10px" />
-					<h5 class="alignment">@Model.TraditionalSpread["Lawful Evil"].Alignment</h5>
-					<div class="description">
-						@Model.TraditionalSpread["Lawful Evil"].Description
-					</div>
-					<div class="normal-description" hidden>
-						@Model.TraditionalSpread["Lawful Evil"].Description
-					</div>
-					<div class="normal-description" hidden>
-						@Model.TraditionalSpread["Lawful Evil"].Description
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
-			<div class="margin @Model.TraditionalSpread["Neutral Evil"].CardColor">
-				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Neutral Evil"].Name">
-					<h3>@Model.TraditionalSpread["Neutral Evil"].Name</h3>
-					<hr style="margin-top: 5px; margin-bottom: 10px" />
-					<h5 class="alignment">@Model.TraditionalSpread["Neutral Evil"].Alignment</h5>
-					<div class="description">
-						@Model.TraditionalSpread["Neutral Evil"].Description
-					</div>
-					<div class="normal-description" hidden>
-						@Model.TraditionalSpread["Neutral Evil"].Description
-					</div>
-					<div class="normal-description" hidden>
-						@Model.TraditionalSpread["Neutral Evil"].Description
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
-			<div class="margin @Model.TraditionalSpread["Chaotic Evil"].CardColor">
-				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model.TraditionalSpread["Chaotic Evil"].Name">
-					<h3>@Model.TraditionalSpread["Chaotic Evil"].Name</h3>
-					<hr style="margin-top: 5px; margin-bottom: 10px" />
-					<h5 class="alignment">@Model.TraditionalSpread["Chaotic Evil"].Alignment</h5>
-					<div class="description">
-						@Model.TraditionalSpread["Chaotic Evil"].Description
-					</div>
-					<div class="normal-description" hidden>
-						@Model.TraditionalSpread["Chaotic Evil"].Description
-					</div>
-					<div class="normal-description" hidden>
-						@Model.TraditionalSpread["Chaotic Evil"].Description
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-</div>
-
-@Html.Partial("_StackedDeck", Model.FullDeck);
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 

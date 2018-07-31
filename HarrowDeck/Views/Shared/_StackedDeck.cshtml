@@ -1,15 +1,26 @@
-﻿<div class="container">
-	<form class="stack-the-deck" asp-controller="HarrowDeck" asp-action="Details" >
+﻿@model HarrowDeck.ViewModels.TraditionalHandViewModel
+<div class="container block">
+	<div class="header">
+		<h3>Stack the Deck</h3>
+	</div>
+	<form class="stack-the-deck form-group" asp-controller="HarrowDeck" asp-action="Details" method="post">
 		<div>
-			<h3 class="card-label"></h3>
-			<label>Alignment Position</label>
-			<input type="text" name="alignment"/>
-			<label>Card Name</label>
-			<input type="text" name="alignment"/>
+			<div class="row">
+				<div class="col-md-3">
+					<label>Alignment Position</label>
+					<input type="text" name="alignment" class="form-control"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<label>Card Name</label>
+					<input type="text" name="alignment" class="form-control"/>
+				</div>
+			</div>
 		</div>
 		<div class="button-container">
-			<button>+</button>
-			<input type="submit" name="submit"></input>
+			<button class="btn btn-primary">+</button>
+			<input class="btn btn-success" type="submit" name="submit" />
 		</div>
 	</form>
 </div>

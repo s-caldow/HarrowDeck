@@ -38,6 +38,14 @@
 	padding: 4%;
 }
 
+.block {
+	display: block;
+}
+
+.button-container {
+	margin: 10px 0px 10px 0px;
+}
+
 .bright-green {
 	border: 2px solid green;
 	border-radius: 5px;
