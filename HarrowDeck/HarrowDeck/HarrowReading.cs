@@ -42,6 +42,19 @@ namespace HarrowDeck.HarrowDeck
 			return SetColor(hand);
 	    }
 
+	    public Dictionary<string, HarrowCard> StackTheDeck(Dictionary<string, HarrowCard> randomDeck, Dictionary<string, HarrowCard> stackedDeck)
+	    {
+		    foreach (var position in randomDeck.Keys)
+		    {
+			    if (stackedDeck[position] != null)
+			    {
+				    randomDeck[position] = stackedDeck[position];
+			    }
+		    }
+
+		    return randomDeck;
+	    }
+
 	    public Dictionary<string, HarrowCard> SetColor(Dictionary<string, HarrowCard> hand)
 	    {
 			foreach (var key in hand.Keys.ToList())
