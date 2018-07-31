@@ -1,0 +1,122 @@
+﻿@model List<HarrowCard>
+@{
+	ViewData["Title"] = "Index";
+}
+
+<div class="header">
+	<h1>Pathfinder Harrow Deck</h1>
+</div>
+
+<h2>Strength</h2>
+<div class="container">
+	<div class="row">
+		@foreach (var item in Model.Where(e => e.Suite == "Strength"))
+		{	
+		<div class="col-md-4 h-30" style="margin-bottom: 10px">
+			<a class="div-link" asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@item.Name">
+				<h3>@item.Name</h3>
+				<hr style="margin-top: 5px; margin-bottom: 10px" />
+				<h5 class="alignment">@item.Alignment</h5>
+				<div class="description">
+					@item.Description
+				</div>
+			</a>
+		</div>
+		}
+	</div>
+</div>
+
+<h2>Dexterity</h2>
+<div class="container">
+	<div class="row">
+		@foreach (var item in Model.Where(e => e.Suite == "Dexterity"))
+		{	
+			<div class="col-md-4 h-30" style="margin-bottom: 10px">
+				<a class="div-link" asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@item.Name">
+					<h3>@item.Name</h3>
+					<hr style="margin-top: 5px; margin-bottom: 10px" />
+					<h5 class="alignment">@item.Alignment</h5>
+					<div class="description">
+						@item.Description
+					</div>
+				</a>
+			</div>
+		}
+	</div>
+</div>
+
+<h2>Constitution</h2>
+<div class="container">
+	<div class="row">
+		@foreach (var item in Model.Where(e => e.Suite == "Constitution"))
+		{	
+			<div class="col-md-4 h-30" style="margin-bottom: 10px">
+				<a class="div-link" asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@item.Name">
+					<h3>@item.Name</h3>
+					<hr style="margin-top: 5px; margin-bottom: 10px" />
+					<h5 class="alignment">@item.Alignment</h5>
+					<div class="description">
+						@item.Description
+					</div>
+				</a>
+			</div>
+		}
+	</div>
+</div>
+
+<h2>Intelligence</h2>
+<div class="container">
+	<div class="row">
+		@foreach (var item in Model.Where(e => e.Suite == "Intelligence"))
+		{	
+			<div class="col-md-4 h-30" style="margin-bottom: 10px">
+				<a class="div-link" asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@item.Name">
+					<h3>@item.Name</h3>
+					<hr style="margin-top: 5px; margin-bottom: 10px" />
+					<h5 class="alignment">@item.Alignment</h5>
+					<div class="description">
+						@item.Description
+					</div>
+				</a>
+			</div>
+		}
+	</div>
+</div>
+
+<h2>Wisdom</h2>
+<div class="container">
+	<div class="row">
+		@foreach (var item in Model.Where(e => e.Suite == "Wisdom"))
+		{	
+			<div class="col-md-4 h-30" style="margin-bottom: 10px">
+				<a class="div-link" asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@item.Name">
+					<h3>@item.Name</h3>
+					<hr style="margin-top: 5px; margin-bottom: 10px" />
+					<h5 class="alignment">@item.Alignment</h5>
+					<div  class="description">
+						@item.Description
+					</div>
+				</a>
+			</div>
+		}
+	</div>
+</div>
+
+<h2>Charisma</h2>
+<div class="container">
+	<div class="row">
+		@foreach (var item in Model.Where(e => e.Suite == "Charisma"))
+		{	
+			<div class="col-md-4 h-30" style="margin-bottom: 10px">
+				<a class="div-link" asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@item.Name">
+					<h3>@item.Name</h3>
+					<hr style="margin-top: 5px; margin-bottom: 10px" />
+					<h5 class="alignment">@item.Alignment</h5>
+					<div class="description">
+						@item.Description
+					</div>
+				</a>
+			</div>
+		}
+	</div>
+</div>

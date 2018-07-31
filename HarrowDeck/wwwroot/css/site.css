@@ -1,0 +1,59 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+	padding: 40px 0px 10px 0px;
+}
+
+.div-link {
+
+}
+
+.div-link:hover{
+	text-decoration: none;
+
+}
+
+.menu-container {
+	margin: 0px 20px 0px 20px;
+}
+
+.description {
+	min-height: 60px;
+}
+
+.margin {
+	width: 90%;
+	height: 90%;
+	margin: 1%;
+	padding: 4%;
+}
+
+.bright-green {
+	border: 2px solid green;
+	border-radius: 5px;
+}
+
+.light-green {
+	border: 2px solid yellowgreen;
+	border-radius: 5px;
+}
+
+.light-red {
+	border: 2px solid red;
+	border-radius: 5px;
+}
+
+.dark-red {
+	border: 2px solid darkred;
+	border-radius: 5px;
+}

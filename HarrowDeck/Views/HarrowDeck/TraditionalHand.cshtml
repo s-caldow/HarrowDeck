@@ -1,0 +1,197 @@
+﻿@model Dictionary<string, HarrowCard>
+@{
+	ViewData["Title"] = "TraditionalSpread";
+}
+
+
+<div class="header">
+	<h1>Alignment Based Harrow Deck</h1>
+</div>
+
+<div class="box alt sector">
+	<div class="row">
+		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+			<div class="margin @Model["Lawful Good"].CardColor">
+				<a id="Lawful Good" class="div-link" asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model["Lawful Good"].Name">
+					<h3>@Model["Lawful Good"].Name</h3>
+					<hr style="margin-top: 5px; margin-bottom: 10px" />
+					<h5 class="alignment">@Model["Lawful Good"].Alignment</h5>
+					<div class="description">
+						@Model["Lawful Good"].Description
+					</div>
+					<div class="normal-description" hidden>
+						@Model["Lawful Good"].Description
+					</div>
+					<div class="inverted-description" hidden>
+						@Model["Lawful Good"].Description
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+			<div class="margin @Model["Neutral Good"].CardColor">
+				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model["Neutral Good"].Name">
+					<h3>@Model["Neutral Good"].Name</h3>
+					<hr style="margin-top: 5px; margin-bottom: 10px" />
+					<h5 class="alignment">@Model["Neutral Good"].Alignment</h5>
+					<div class="description">
+						@Model["Neutral Good"].Description
+					</div>
+					<div class="normal-description" hidden>
+						@Model["Neutral Good"].Description
+					</div>
+					<div class="inverted-description" hidden>
+						@Model["Neutral Good"].Description
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+			<div class="margin @Model["Chaotic Good"].CardColor">
+				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model["Chaotic Good"].Name">
+					<h3>@Model["Chaotic Good"].Name</h3>
+					<hr style="margin-top: 5px; margin-bottom: 10px" />
+					<h5 class="alignment">@Model["Chaotic Good"].Alignment</h5>
+					<div class="description">
+						@Model["Chaotic Good"].Description
+					</div>
+					<div class="normal-description" hidden>
+						@Model["Chaotic Good"].Description
+					</div>
+					<div class="inverted-description" hidden>
+						@Model["Chaotic Good"].Description
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+			<div class="margin @Model["Lawful Neutral"].CardColor">
+				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model["Lawful Neutral"].Name">
+					<h3>@Model["Lawful Neutral"].Name</h3>
+					<hr style="margin-top: 5px; margin-bottom: 10px" />
+					<h5 class="alignment">@Model["Lawful Neutral"].Alignment</h5>
+					<div class="description">
+						@Model["Lawful Neutral"].Description
+					</div>
+					<div class="normal-description" hidden>
+						@Model["Lawful Neutral"].Description
+					</div>
+					<div class="normal-description" hidden>
+						@Model["Lawful Neutral"].Description
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+			<div class="margin @Model["True Neutral"].CardColor">
+				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model["True Neutral"].Name">
+					<h3>@Model["True Neutral"].Name</h3>
+					<hr style="margin-top: 5px; margin-bottom: 10px" />
+					<h5 class="alignment">@Model["True Neutral"].Alignment</h5>
+					<div class="description">
+						@Model["True Neutral"].Description
+					</div>
+					<div class="normal-description" hidden>
+						@Model["True Neutral"].Description
+					</div>
+					<div class="normal-description" hidden>
+						@Model["True Neutral"].Description
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+			<div class="margin @Model["Chaotic Neutral"].CardColor">
+				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model["Chaotic Neutral"].Name">
+					<h3>@Model["Chaotic Neutral"].Name</h3>
+					<hr style="margin-top: 5px; margin-bottom: 10px" />
+					<h5 class="alignment">@Model["Chaotic Neutral"].Alignment</h5>
+					<div class="description">
+						@Model["Chaotic Neutral"].Description
+					</div>
+					<div class="normal-description" hidden>
+						@Model["Chaotic Neutral"].Description
+					</div>
+					<div class="normal-description" hidden>
+						@Model["Chaotic Neutral"].Description
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+			<div class="margin @Model["Lawful Evil"].CardColor">
+				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model["Lawful Evil"].Name">
+					<h3>@Model["Lawful Evil"].Name</h3>
+					<hr style="margin-top: 5px; margin-bottom: 10px" />
+					<h5 class="alignment">@Model["Lawful Evil"].Alignment</h5>
+					<div class="description">
+						@Model["Lawful Evil"].Description
+					</div>
+					<div class="normal-description" hidden>
+						@Model["Lawful Evil"].Description
+					</div>
+					<div class="normal-description" hidden>
+						@Model["Lawful Evil"].Description
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+			<div class="margin @Model["Neutral Evil"].CardColor">
+				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model["Neutral Evil"].Name">
+					<h3>@Model["Neutral Evil"].Name</h3>
+					<hr style="margin-top: 5px; margin-bottom: 10px" />
+					<h5 class="alignment">@Model["Neutral Evil"].Alignment</h5>
+					<div class="description">
+						@Model["Neutral Evil"].Description
+					</div>
+					<div class="normal-description" hidden>
+						@Model["Neutral Evil"].Description
+					</div>
+					<div class="normal-description" hidden>
+						@Model["Neutral Evil"].Description
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-md-4 h-30" style="margin-bottom: 10px;">
+			<div class="margin @Model["Chaotic Evil"].CardColor">
+				<a id="Lawful Good" class="div-link " asp-controller="HarrowDeck" asp-action="Details" asp-route-name="@Model["Chaotic Evil"].Name">
+					<h3>@Model["Chaotic Evil"].Name</h3>
+					<hr style="margin-top: 5px; margin-bottom: 10px" />
+					<h5 class="alignment">@Model["Chaotic Evil"].Alignment</h5>
+					<div class="description">
+						@Model["Chaotic Evil"].Description
+					</div>
+					<div class="normal-description" hidden>
+						@Model["Chaotic Evil"].Description
+					</div>
+					<div class="normal-description" hidden>
+						@Model["Chaotic Evil"].Description
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script>
+	var placeHolders = $('.place-holder');
+	for (var i = 0; i < placeHolders.length; i++) {
+		var place = placeHolders[i];
+		var alignment = place.id;
+		var card = $(alignment).find('.alignment');
+
+		//var cardAlignment = card.innerHTML();
+
+		if (i/2 > 4) {
+			place.addClass("rightside");
+		}
+	}
+</script>

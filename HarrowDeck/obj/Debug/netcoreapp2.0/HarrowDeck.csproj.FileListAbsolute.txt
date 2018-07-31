@@ -1,0 +1,11 @@
+C:\src\programming-practice\HarrowDeck\HarrowDeck\obj\Debug\netcoreapp2.0\HarrowDeck.csprojAssemblyReference.cache
+C:\src\programming-practice\HarrowDeck\HarrowDeck\obj\Debug\netcoreapp2.0\HarrowDeck.csproj.CoreCompileInputs.cache
+C:\src\programming-practice\HarrowDeck\HarrowDeck\obj\Debug\netcoreapp2.0\HarrowDeck.AssemblyInfoInputs.cache
+C:\src\programming-practice\HarrowDeck\HarrowDeck\obj\Debug\netcoreapp2.0\HarrowDeck.AssemblyInfo.cs
+C:\src\programming-practice\HarrowDeck\HarrowDeck\bin\Debug\netcoreapp2.0\HarrowDeck.deps.json
+C:\src\programming-practice\HarrowDeck\HarrowDeck\bin\Debug\netcoreapp2.0\HarrowDeck.runtimeconfig.json
+C:\src\programming-practice\HarrowDeck\HarrowDeck\bin\Debug\netcoreapp2.0\HarrowDeck.runtimeconfig.dev.json
+C:\src\programming-practice\HarrowDeck\HarrowDeck\bin\Debug\netcoreapp2.0\HarrowDeck.dll
+C:\src\programming-practice\HarrowDeck\HarrowDeck\bin\Debug\netcoreapp2.0\HarrowDeck.pdb
+C:\src\programming-practice\HarrowDeck\HarrowDeck\obj\Debug\netcoreapp2.0\HarrowDeck.dll
+C:\src\programming-practice\HarrowDeck\HarrowDeck\obj\Debug\netcoreapp2.0\HarrowDeck.pdb
