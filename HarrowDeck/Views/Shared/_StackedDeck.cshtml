@@ -3,8 +3,8 @@
 	<div class="header">
 		<h3>Stack the Deck</h3>
 	</div>
-	<form class="stack-the-deck form-group" asp-controller="HarrowDeck" asp-action="Details" method="post">
-		<div>
+	<form class="stack-the-deck form-group" asp-controller="HarrowDeck" asp-action="TraditionalHand" method="post">
+		<div id="card-1" class="card">
 			<div class="row">
 				<div class="col-md-3">
 					<label>Alignment Position</label>
@@ -19,8 +19,27 @@
 			</div>
 		</div>
 		<div class="button-container">
-			<button class="btn btn-primary">+</button>
+			<div id="add-card" class="btn btn-primary">+</div>
 			<input class="btn btn-success" type="submit" name="submit" />
 		</div>
 	</form>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+	var numCards = 1;
+
+	var label1 = document.createElement('label').setAttribute('innerHTML', 'Alignment Position');
+	var input1 = document.createElement('input').setAttribute('type', 'text').setAttribute('name', 'alignment')
+		.setAttribute('class', 'form-control');
+	var col1 = document.createElement('div').setAttribute('class', 'col-md-3').append(label1).append(input1);
+	var row1 = document.createElement('div').setAttribute('class', 'row').append(col1);
+	var container = document.createElement('div').setAttribute('class', 'card').setAttribute('id', 'card' + numCards).append(row1);
+
+	$("#add-card").click(function () {
+		var newCard = document.createElement()
+		$('card-' + numCards);
+		numCards += 1;
+	});
+</script>
